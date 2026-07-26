@@ -1,0 +1,12 @@
+{
+  "name": "ai-to-figma-importer",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Figma plugin that imports Illustrator artwork (exported as SVG) into Figma as an editable frame with real text nodes, vector shapes, and images.",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "devDependencies": {
+    "jsdom": "^24.1.0"
+  }
+}
