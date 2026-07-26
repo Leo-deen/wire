@@ -1,0 +1,9 @@
+{
+  "name": "ai-to-figma-illustrator-extension",
+  "private": true,
+  "version": "1.0.0",
+  "description": "CEP panel + ExtendScript that reads the live Illustrator document and pushes it to the AI-to-Figma bridge.",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  }
+}

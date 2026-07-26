@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 14px;
+    font-family: -apple-system, "Segoe UI", sans-serif;
+    font-size: 12px;
+    background: #323232;
+    color: #ddd;
+  }
+  h1 { font-size: 13px; margin: 0 0 8px; color: #fff; }
+  p.hint { color: #aaa; line-height: 1.5; margin: 0 0 12px; }
+  #bridgeStatus {
+    padding: 6px 8px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    font-size: 11px;
+  }
+  #bridgeStatus.ok { background: #1a3d24; color: #7be08a; }
+  #bridgeStatus.err { background: #3d1a1a; color: #e08a8a; }
+  button {
+    width: 100%;
+    padding: 9px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    background: #18a0fb;
+    color: white;
+    cursor: pointer;
+  }
+  button:disabled { background: #3a5a70; cursor: not-allowed; }
+  #log {
+    margin-top: 12px;
+    font-family: monospace;
+    font-size: 10px;
+    color: #999;
+    white-space: pre-wrap;
+    max-height: 220px;
+    overflow-y: auto;
+    border-top: 1px solid #444;
+    padding-top: 8px;
+  }
+</style>
+</head>
+<body>
+  <h1>AI &rarr; Figma Live Bridge</h1>
+  <p class="hint">Select objects in Illustrator, then push them straight to the open Figma plugin.</p>
+
+  <div id="bridgeStatus" class="err">Connecting to bridge server&hellip;</div>
+  <button id="pushBtn">Push Selection to Figma</button>
+  <div id="log"></div>
+
+  <script src="lib/cep-bridge.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

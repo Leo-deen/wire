@@ -1,0 +1,14 @@
+{
+  "name": "ai-to-figma-bridge-server",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Local WebSocket relay between the Illustrator CEP panel and the Figma live-bridge plugin.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
