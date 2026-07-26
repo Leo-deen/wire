@@ -1,0 +1,18 @@
+{
+  "name": "AI to Figma Live Bridge",
+  "id": "ai-to-figma-live-bridge-local-dev",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html",
+  "editorType": ["figma"],
+  "networkAccess": {
+    "allowedDomains": ["ws://localhost:8720", "ws://127.0.0.1:8720"],
+    "devAllowedDomains": [
+      "ws://localhost:8720",
+      "ws://127.0.0.1:8720",
+      "http://localhost:8720",
+      "http://127.0.0.1:8720"
+    ],
+    "reasoning": "Connects to a local WebSocket relay (bridge-server/) that forwards live selections pushed from an Illustrator CEP panel running on the same machine."
+  }
+}
